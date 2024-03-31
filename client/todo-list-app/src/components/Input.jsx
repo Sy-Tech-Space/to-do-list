@@ -1,18 +1,22 @@
-import React from 'react'
+import React from "react";
+
+
 
 function Input() {
+
   return (
-    <div className=" m-20 flex justify-center items-center">
-    <input
-      className=" border-2 p-2 rounded   border-gray-600"
-      name="firstName"
-    />
-    <button className="border-2 m-1 rounded p-2 bg-pink-500  border-gray-600">
-      {" "}
-      Add Task
-    </button>
-  </div>
-  )
+    <form className="flex justify-center items-center my-12">
+      
+      <input
+        className=" border-2 p-2 rounded"
+        name="todo"
+      />
+      <button className="border-2 m-2 rounded py-2 px-4 bg-violet-500 text-white">
+        {" "}
+        Add Task
+      </button>
+    </form>
+  );
 }
 
-export default Input
+export default Input;
