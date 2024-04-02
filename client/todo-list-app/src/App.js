@@ -1,13 +1,15 @@
-import "./App.css";
 import Header from "./components/Header";
-// import Input from "./components/Input";
+import Input from "./components/Input";
 import ToDoList from "./components/ToDoList";
 
 function App() {
   return (
-    <div className="h-screen w-screen bg-slate-200">
-      <Header />
-      <ToDoList />
+    <div className="min-h-screen w-screen bg-white">
+      <div className="h-screen">
+        <Header />
+        <Input />
+        <ToDoList />
+      </div>
     </div>
   );
 }
